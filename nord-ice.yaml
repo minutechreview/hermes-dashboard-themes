@@ -1,0 +1,72 @@
+name: nord-ice
+label: Nord Ice
+description: Arctic polar theme based on the popular Nord color palette
+
+palette:
+  background:
+    hex: "#2e3440"
+    alpha: 1.0
+  midground:
+    hex: "#88c0d0"
+    alpha: 1.0
+  foreground:
+    hex: "#eceff4"
+    alpha: 0.1
+  warmGlow: "rgba(136, 192, 208, 0.2)"
+  noiseOpacity: 0.35
+
+typography:
+  fontSans: '"Inter", "Roboto", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", "Fira Code", ui-monospace, monospace'
+  fontDisplay: '"Inter", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+  letterSpacing: "0"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#88c0d0"
+  primaryForeground: "#2e3440"
+  accent: "#81a1c1"
+  ring: "#88c0d0"
+  destructive: "#bf616a"
+  border: "rgba(136, 192, 208, 0.2)"
+  muted: "#3b4252"
+  mutedForeground: "#81a1c1"
+  secondary: "#434c5e"
+  secondaryForeground: "#d8dee9"
+
+componentStyles:
+  card:
+    background: "linear-gradient(180deg, rgba(59, 66, 82, 0.9), rgba(46, 52, 64, 0.95))"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(136, 192, 208, 0.1)"
+  header:
+    background: "linear-gradient(180deg, rgba(46, 52, 64, 0.98), rgba(38, 44, 56, 0.95))"
+    boxShadow: "0 1px 0 rgba(136, 192, 208, 0.1)"
+
+customCSS: |
+  /* Subtle aurora effect */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background: 
+      radial-gradient(ellipse at 30% 20%, rgba(136, 192, 208, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 70% 80%, rgba(129, 161, 193, 0.06) 0%, transparent 50%);
+  }
+  
+  /* Clean code block styling */
+  pre, code {
+    border-radius: 0.375rem;
+  }

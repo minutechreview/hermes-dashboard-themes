@@ -1,0 +1,94 @@
+name: synthwave
+label: Synthwave
+description: 80s neon grid with magenta accents on deep purple-black
+
+palette:
+  background:
+    hex: "#0d0221"
+    alpha: 1.0
+  midground:
+    hex: "#ff00ff"
+    alpha: 1.0
+  foreground:
+    hex: "#00ffff"
+    alpha: 0.3
+  warmGlow: "rgba(255, 0, 255, 0.25)"
+  noiseOpacity: 0.6
+
+typography:
+  fontSans: '"Orbitron", "Eurostile", "Impact", sans-serif'
+  fontMono: '"Share Tech Mono", ui-monospace, monospace'
+  fontDisplay: '"Orbitron", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap"
+  baseSize: "14px"
+  lineHeight: "1.5"
+  letterSpacing: "0.06em"
+
+layout:
+  radius: "0"
+  density: compact
+
+layoutVariant: cockpit
+
+assets:
+  bg: "none"
+  hero: "none"
+  crest: "none"
+  custom:
+    grid: "none"
+
+colorOverrides:
+  primary: "#ff00ff"
+  primaryForeground: "#0d0221"
+  accent: "#00ffff"
+  ring: "#ff00ff"
+  destructive: "#ff3366"
+  border: "rgba(255, 0, 255, 0.3)"
+  muted: "#1a0a33"
+  mutedForeground: "#9966cc"
+
+componentStyles:
+  card:
+    clipPath: "polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)"
+    background: "linear-gradient(180deg, rgba(20, 5, 40, 0.95), rgba(10, 2, 20, 0.98))"
+    boxShadow: "inset 0 0 0 1px rgba(255, 0, 255, 0.25), 0 0 20px rgba(255, 0, 255, 0.1)"
+  header:
+    background: "linear-gradient(180deg, rgba(13, 2, 33, 0.98), rgba(10, 2, 25, 0.95))"
+    boxShadow: "0 0 15px rgba(255, 0, 255, 0.15)"
+  tab:
+    clipPath: "polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%)"
+  progress:
+    background: "linear-gradient(90deg, #ff00ff, #00ffff)"
+
+customCSS: |
+  /* Retro grid overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    background: 
+      linear-gradient(to bottom, rgba(255, 0, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to right, rgba(255, 0, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+  }
+  
+  /* Glowing text effect on headings */
+  h1, h2, h3 {
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(13, 2, 33, 0.8);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff00ff, #00ffff);
+    border-radius: 0;
+  }
