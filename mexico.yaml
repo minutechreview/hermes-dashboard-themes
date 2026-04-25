@@ -3,15 +3,9 @@ label: Mexico
 description: Vibrant Mexican flag colors — green, white, red with golden marigold accents
 
 palette:
-  background:
-    hex: "#0a1f0a"
-    alpha: 1.0
-  midground:
-    hex: "#ffffff"
-    alpha: 1.0
-  foreground:
-    hex: "#ce1126"
-    alpha: 0.15
+  background: "#0a1f0a"
+  midground: "#ffffff"
+  foreground: "#ce1126"
   warmGlow: "rgba(206, 17, 38, 0.15)"
   noiseOpacity: 0.3
 

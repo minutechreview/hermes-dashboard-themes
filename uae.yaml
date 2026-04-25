@@ -3,15 +3,9 @@ label: UAE
 description: Elegant Emirati aesthetic — red, green, white, and black with gold accents
 
 palette:
-  background:
-    hex: "#0d0d0d"
-    alpha: 1.0
-  midground:
-    hex: "#e8e4dc"
-    alpha: 1.0
-  foreground:
-    hex: "#d4af37"
-    alpha: 0.2
+  background: "#0d0d0d"
+  midground: "#e8e4dc"
+  foreground: "#d4af37"
   warmGlow: "rgba(212, 175, 55, 0.15)"
   noiseOpacity: 0.25
 

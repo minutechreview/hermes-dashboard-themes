@@ -3,15 +3,9 @@ label: Kuwait Flag
 description: Bold Kuwait national colors — red, green, white, and black with geometric Gulf-inspired accents
 
 palette:
-  background:
-    hex: "#0a0a0a"
-    alpha: 1.0
-  midground:
-    hex: "#ffffff"
-    alpha: 1.0
-  foreground:
-    hex: "#ce1126"
-    alpha: 0.2
+  background: "#0a0a0a"
+  midground: "#ffffff"
+  foreground: "#ce1126"
   warmGlow: "rgba(206, 17, 38, 0.15)"
   noiseOpacity: 0.3
 

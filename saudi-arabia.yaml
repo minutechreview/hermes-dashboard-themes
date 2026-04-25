@@ -3,15 +3,9 @@ label: Saudi Arabia
 description: Kingdom green with white and gold — inspired by the Saudi national flag
 
 palette:
-  background:
-    hex: "#0a1f0a"
-    alpha: 1.0
-  midground:
-    hex: "#ffffff"
-    alpha: 1.0
-  foreground:
-    hex: "#d4af37"
-    alpha: 0.15
+  background: "#0a1f0a"
+  midground: "#ffffff"
+  foreground: "#d4af37"
   warmGlow: "rgba(212, 175, 55, 0.15)"
   noiseOpacity: 0.25
 

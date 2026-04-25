@@ -3,15 +3,9 @@ label: Kuwait Pearl
 description: Deep pearlescent sea greens with ivory accents, inspired by the Gulf's pearl diving heritage
 
 palette:
-  background:
-    hex: "#0a1a1a"
-    alpha: 1.0
-  midground:
-    hex: "#7dd3c0"
-    alpha: 1.0
-  foreground:
-    hex: "#f5f5dc"
-    alpha: 0.15
+  background: "#0a1a1a"
+  midground: "#7dd3c0"
+  foreground: "#f5f5dc"
   warmGlow: "rgba(125, 211, 192, 0.25)"
   noiseOpacity: 0.4
 

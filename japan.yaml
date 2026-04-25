@@ -3,15 +3,9 @@ label: Japan
 description: Minimalist hinomari aesthetic — pure white with deep crimson red
 
 palette:
-  background:
-    hex: "#faf8f5"
-    alpha: 1.0
-  midground:
-    hex: "#bc002d"
-    alpha: 1.0
-  foreground:
-    hex: "#1a1a1a"
-    alpha: 0.05
+  background: "#faf8f5"
+  midground: "#bc002d"
+  foreground: "#1a1a1a"
   warmGlow: "rgba(188, 0, 45, 0.08)"
   noiseOpacity: 0.15
 

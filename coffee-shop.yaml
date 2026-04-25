@@ -3,15 +3,9 @@ label: Coffee Shop
 description: Warm café aesthetic with rich browns, creams, and amber accents
 
 palette:
-  background:
-    hex: "#2b1d14"
-    alpha: 1.0
-  midground:
-    hex: "#d4a574"
-    alpha: 1.0
-  foreground:
-    hex: "#f5e6d3"
-    alpha: 0.15
+  background: "#2b1d14"
+  midground: "#d4a574"
+  foreground: "#f5e6d3"
   warmGlow: "rgba(212, 165, 116, 0.25)"
   noiseOpacity: 0.3
 

@@ -3,15 +3,9 @@ label: South Korea
 description: Taegeukgi inspired — white background with red, blue, and black trigram accents
 
 palette:
-  background:
-    hex: "#f5f5f5"
-    alpha: 1.0
-  midground:
-    hex: "#1a1a1a"
-    alpha: 1.0
-  foreground:
-    hex: "#c60c30"
-    alpha: 0.1
+  background: "#f5f5f5"
+  midground: "#1a1a1a"
+  foreground: "#c60c30"
   warmGlow: "rgba(198, 12, 48, 0.08)"
   noiseOpacity: 0.15
 

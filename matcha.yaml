@@ -3,15 +3,9 @@ label: Matcha
 description: Calm Japanese tea shop aesthetic with soft greens and warm cream accents
 
 palette:
-  background:
-    hex: "#1a2f1a"
-    alpha: 1.0
-  midground:
-    hex: "#a8d5a2"
-    alpha: 1.0
-  foreground:
-    hex: "#f5f5dc"
-    alpha: 0.15
+  background: "#1a2f1a"
+  midground: "#a8d5a2"
+  foreground: "#f5f5dc"
   warmGlow: "rgba(168, 213, 162, 0.15)"
   noiseOpacity: 0.4
 

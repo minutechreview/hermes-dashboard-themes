@@ -3,15 +3,9 @@ label: Synthwave
 description: 80s neon grid with magenta accents on deep purple-black
 
 palette:
-  background:
-    hex: "#0d0221"
-    alpha: 1.0
-  midground:
-    hex: "#ff00ff"
-    alpha: 1.0
-  foreground:
-    hex: "#00ffff"
-    alpha: 0.3
+  background: "#0d0221"
+  midground: "#ff00ff"
+  foreground: "#00ffff"
   warmGlow: "rgba(255, 0, 255, 0.25)"
   noiseOpacity: 0.6
 

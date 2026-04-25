@@ -3,15 +3,9 @@ label: Philippines
 description: Sun and stars — blue, red, white, and golden yellow from the Philippine flag
 
 palette:
-  background:
-    hex: "#0a1628"
-    alpha: 1.0
-  midground:
-    hex: "#fcd116"
-    alpha: 1.0
-  foreground:
-    hex: "#ffffff"
-    alpha: 0.2
+  background: "#0a1628"
+  midground: "#fcd116"
+  foreground: "#ffffff"
   warmGlow: "rgba(252, 209, 22, 0.2)"
   noiseOpacity: 0.35
 

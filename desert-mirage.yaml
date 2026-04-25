@@ -3,15 +3,9 @@ label: Desert Mirage
 description: Warm terracotta sands with burnt amber accents and sunset coral highlights
 
 palette:
-  background:
-    hex: "#1a0f0a"
-    alpha: 1.0
-  midground:
-    hex: "#e8a87c"
-    alpha: 1.0
-  foreground:
-    hex: "#ffecd2"
-    alpha: 0.2
+  background: "#1a0f0a"
+  midground: "#e8a87c"
+  foreground: "#ffecd2"
   warmGlow: "rgba(232, 168, 124, 0.35)"
   noiseOpacity: 0.5
 

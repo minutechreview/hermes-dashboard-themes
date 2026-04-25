@@ -3,15 +3,9 @@ label: Nord Ice
 description: Arctic polar theme based on the popular Nord color palette
 
 palette:
-  background:
-    hex: "#2e3440"
-    alpha: 1.0
-  midground:
-    hex: "#88c0d0"
-    alpha: 1.0
-  foreground:
-    hex: "#eceff4"
-    alpha: 0.1
+  background: "#2e3440"
+  midground: "#88c0d0"
+  foreground: "#eceff4"
   warmGlow: "rgba(136, 192, 208, 0.2)"
   noiseOpacity: 0.35
 

@@ -3,15 +3,9 @@ label: Sri Lanka
 description: Lion flag inspired — maroon, saffron orange, forest green, and golden yellow
 
 palette:
-  background:
-    hex: "#2a0a0a"
-    alpha: 1.0
-  midground:
-    hex: "#ffb300"
-    alpha: 1.0
-  foreground:
-    hex: "#ff8c00"
-    alpha: 0.15
+  background: "#2a0a0a"
+  midground: "#ffb300"
+  foreground: "#ff8c00"
   warmGlow: "rgba(255, 179, 0, 0.2)"
   noiseOpacity: 0.35
 

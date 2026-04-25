@@ -3,15 +3,9 @@ label: Midnight Oil
 description: Deep navy canvas with warm amber accents like an old oil lamp in a captain's quarters
 
 palette:
-  background:
-    hex: "#0a0e1a"
-    alpha: 1.0
-  midground:
-    hex: "#f4a261"
-    alpha: 1.0
-  foreground:
-    hex: "#e9c46a"
-    alpha: 0.2
+  background: "#0a0e1a"
+  midground: "#f4a261"
+  foreground: "#e9c46a"
   warmGlow: "rgba(244, 162, 97, 0.3)"
   noiseOpacity: 0.6
 

@@ -3,15 +3,9 @@ label: India
 description: Saffron, white, and green with Ashoka Chakra blue — the tricolor spirit
 
 palette:
-  background:
-    hex: "#1a2410"
-    alpha: 1.0
-  midground:
-    hex: "#ffffff"
-    alpha: 1.0
-  foreground:
-    hex: "#ff9932"
-    alpha: 0.15
+  background: "#1a2410"
+  midground: "#ffffff"
+  foreground: "#ff9932"
   warmGlow: "rgba(255, 153, 50, 0.15)"
   noiseOpacity: 0.3
 

@@ -3,15 +3,9 @@ label: Tokyo Night
 description: Cyberpunk Tokyo city lights with deep blues and electric pinks
 
 palette:
-  background:
-    hex: "#1a1b26"
-    alpha: 1.0
-  midground:
-    hex: "#7aa2f7"
-    alpha: 1.0
-  foreground:
-    hex: "#c0caf5"
-    alpha: 0.2
+  background: "#1a1b26"
+  midground: "#7aa2f7"
+  foreground: "#c0caf5"
   warmGlow: "rgba(122, 162, 247, 0.2)"
   noiseOpacity: 0.45
 

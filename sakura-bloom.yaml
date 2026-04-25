@@ -3,15 +3,9 @@ label: Sakura Bloom
 description: Soft cherry blossom pinks with warm cream and rose gold accents
 
 palette:
-  background:
-    hex: "#1a0f14"
-    alpha: 1.0
-  midground:
-    hex: "#ffb7c5"
-    alpha: 1.0
-  foreground:
-    hex: "#fff0f5"
-    alpha: 0.25
+  background: "#1a0f14"
+  midground: "#ffb7c5"
+  foreground: "#fff0f5"
   warmGlow: "rgba(255, 183, 197, 0.3)"
   noiseOpacity: 0.35
 
