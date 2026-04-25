@@ -1,0 +1,37 @@
+name: kuwait-pearl
+label: Kuwait Pearl
+description: Deep pearlescent sea greens with ivory accents, inspired by the Gulf's pearl diving heritage
+
+palette:
+  background:
+    hex: "#0a1a1a"
+    alpha: 1.0
+  midground:
+    hex: "#7dd3c0"
+    alpha: 1.0
+  foreground:
+    hex: "#f5f5dc"
+    alpha: 0.15
+  warmGlow: "rgba(125, 211, 192, 0.25)"
+  noiseOpacity: 0.4
+
+typography:
+  fontSans: "Cormorant Garamond, Georgia, serif"
+  fontMono: "JetBrains Mono, ui-monospace, monospace"
+  fontDisplay: "Cormorant Garamond, Georgia, serif"
+  fontUrl: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "16px"
+  lineHeight: "1.65"
+  letterSpacing: "0.01em"
+
+layout:
+  radius: "0.75rem"
+  density: comfortable
+
+colorOverrides:
+  primary: "#7dd3c0"
+  primaryForeground: "#0a1a1a"
+  accent: "#d4af37"
+  accentForeground: "#0a1a1a"
+  destructive: "#e74c3c"
+  ring: "#7dd3c0"

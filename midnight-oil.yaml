@@ -1,0 +1,40 @@
+name: midnight-oil
+label: Midnight Oil
+description: Deep navy canvas with warm amber accents like an old oil lamp in a captain's quarters
+
+palette:
+  background:
+    hex: "#0a0e1a"
+    alpha: 1.0
+  midground:
+    hex: "#f4a261"
+    alpha: 1.0
+  foreground:
+    hex: "#e9c46a"
+    alpha: 0.2
+  warmGlow: "rgba(244, 162, 97, 0.3)"
+  noiseOpacity: 0.6
+
+typography:
+  fontSans: "Libre Baskerville, Georgia, serif"
+  fontMono: "IBM Plex Mono, ui-monospace, monospace"
+  fontDisplay: "Libre Baskerville, Georgia, serif"
+  fontUrl: "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.7"
+  letterSpacing: "0.005em"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+colorOverrides:
+  primary: "#f4a261"
+  primaryForeground: "#0a0e1a"
+  accent: "#e9c46a"
+  accentForeground: "#0a0e1a"
+  destructive: "#e76f51"
+  ring: "#f4a261"
+  muted: "#1a1f35"
+  mutedForeground: "#8a90a8"
+  border: "#2a3048"

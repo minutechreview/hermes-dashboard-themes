@@ -1,0 +1,66 @@
+name: matrix-terminal
+label: Matrix Terminal
+description: Classic phosphor green on black with scanline effects and zero-radius chrome
+
+palette:
+  background:
+    hex: "#000000"
+    alpha: 1.0
+  midground:
+    hex: "#00ff41"
+    alpha: 1.0
+  foreground:
+    hex: "#ffffff"
+    alpha: 0.0
+  warmGlow: "rgba(0, 255, 65, 0.15)"
+  noiseOpacity: 0.2
+
+typography:
+  fontSans: "Share Tech Mono, ui-monospace, monospace"
+  fontMono: "Share Tech Mono, ui-monospace, monospace"
+  fontDisplay: "Share Tech Mono, ui-monospace, monospace"
+  fontUrl: "https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+  baseSize: "14px"
+  lineHeight: "1.4"
+  letterSpacing: "0.02em"
+
+layout:
+  radius: "0"
+  density: compact
+
+colorOverrides:
+  primary: "#00ff41"
+  primaryForeground: "#000000"
+  accent: "#008f11"
+  accentForeground: "#000000"
+  destructive: "#ff003c"
+  ring: "#00ff41"
+  muted: "#003b00"
+  mutedForeground: "#00cc33"
+  border: "#003b00"
+
+componentStyles:
+  card:
+    border: "1px solid #003b00"
+    boxShadow: "0 0 8px rgba(0, 255, 65, 0.1)"
+  header:
+    borderBottom: "1px solid #003b00"
+  tab:
+    borderRadius: "0"
+    border: "1px solid #003b00"
+
+customCSS: |
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 2px,
+      rgba(0, 255, 65, 0.03) 2px,
+      rgba(0, 255, 65, 0.03) 4px
+    );
+  }
