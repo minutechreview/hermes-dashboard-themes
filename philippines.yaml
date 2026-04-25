@@ -1,0 +1,87 @@
+name: philippines
+label: Philippines
+description: Sun and stars — blue, red, white, and golden yellow from the Philippine flag
+
+palette:
+  background:
+    hex: "#0a1628"
+    alpha: 1.0
+  midground:
+    hex: "#fcd116"
+    alpha: 1.0
+  foreground:
+    hex: "#ffffff"
+    alpha: 0.2
+  warmGlow: "rgba(252, 209, 22, 0.2)"
+  noiseOpacity: 0.35
+
+typography:
+  fontSans: '"Noto Sans", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+  letterSpacing: "0"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#0038a8"
+  primaryForeground: "#ffffff"
+  accent: "#ce1126"
+  ring: "#fcd116"
+  destructive: "#ce1126"
+  border: "rgba(0, 56, 168, 0.3)"
+  muted: "#152238"
+  mutedForeground: "#8aa4d0"
+  secondary: "#1a2d4a"
+  secondaryForeground: "#fcd116"
+  success: "#2e7d32"
+  warning: "#f9a825"
+
+componentStyles:
+  card:
+    background: "linear-gradient(180deg, rgba(21, 34, 56, 0.95), rgba(10, 22, 40, 0.98))"
+    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 56, 168, 0.2)"
+    borderRadius: "0.5rem"
+  header:
+    background: "linear-gradient(180deg, rgba(10, 22, 40, 0.98), rgba(8, 18, 35, 0.95))"
+    boxShadow: "0 2px 0 rgba(206, 17, 38, 0.25)"
+  badge:
+    background: "linear-gradient(135deg, #0038a8, #002a7a)"
+    color: "#fcd116"
+
+customCSS: |
+  /* Sun rays glow */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background: 
+      radial-gradient(circle at 20% 30%, rgba(252, 209, 22, 0.06) 0%, transparent 30%),
+      radial-gradient(circle at 80% 70%, rgba(0, 56, 168, 0.06) 0%, transparent 30%);
+  }
+  
+  /* Star accent on buttons */
+  button[class*="primary"] {
+    position: relative;
+  }
+  button[class*="primary"]::after {
+    content: "\2726";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    opacity: 0.4;
+  }

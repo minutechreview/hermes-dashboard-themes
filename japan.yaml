@@ -1,0 +1,91 @@
+name: japan
+label: Japan
+description: Minimalist hinomari aesthetic — pure white with deep crimson red
+
+palette:
+  background:
+    hex: "#faf8f5"
+    alpha: 1.0
+  midground:
+    hex: "#bc002d"
+    alpha: 1.0
+  foreground:
+    hex: "#1a1a1a"
+    alpha: 0.05
+  warmGlow: "rgba(188, 0, 45, 0.08)"
+  noiseOpacity: 0.15
+
+typography:
+  fontSans: '"Noto Sans JP", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans JP", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "16px"
+  lineHeight: "1.7"
+  letterSpacing: "0.02em"
+
+layout:
+  radius: "1rem"
+  density: spacious
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#bc002d"
+  primaryForeground: "#ffffff"
+  accent: "#1a1a1a"
+  ring: "#bc002d"
+  destructive: "#d32f2f"
+  border: "rgba(188, 0, 45, 0.15)"
+  muted: "#f0ece6"
+  mutedForeground: "#8a8580"
+  secondary: "#e8e4de"
+  secondaryForeground: "#4a4540"
+  success: "#2e7d32"
+  warning: "#ed6c02"
+
+componentStyles:
+  card:
+    background: "#ffffff"
+    boxShadow: "0 1px 4px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(188, 0, 45, 0.06)"
+    borderRadius: "1rem"
+  header:
+    background: "linear-gradient(180deg, #faf8f5, #f5f2ed)"
+    boxShadow: "0 1px 0 rgba(188, 0, 45, 0.08)"
+  badge:
+    background: "#bc002d"
+    color: "#ffffff"
+
+customCSS: |
+  /* Subtle washi paper texture feel */
+  body {
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(250, 248, 245, 1) 0%, rgba(245, 242, 237, 1) 100%);
+  }
+  
+  /* Red dot accent on active tabs */
+  [aria-selected="true"]::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #bc002d;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Clean scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f0ece6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d4cec6;
+    border-radius: 4px;
+  }

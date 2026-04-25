@@ -1,0 +1,92 @@
+name: mexico
+label: Mexico
+description: Vibrant Mexican flag colors — green, white, red with golden marigold accents
+
+palette:
+  background:
+    hex: "#0a1f0a"
+    alpha: 1.0
+  midground:
+    hex: "#ffffff"
+    alpha: 1.0
+  foreground:
+    hex: "#ce1126"
+    alpha: 0.15
+  warmGlow: "rgba(206, 17, 38, 0.15)"
+  noiseOpacity: 0.3
+
+typography:
+  fontSans: '"Noto Sans", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+  letterSpacing: "0.01em"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#006847"
+  primaryForeground: "#ffffff"
+  accent: "#ce1126"
+  ring: "#ce1126"
+  destructive: "#b71c1c"
+  border: "rgba(0, 104, 71, 0.3)"
+  muted: "#152615"
+  mutedForeground: "#6aaa6a"
+  secondary: "#1f3a1f"
+  secondaryForeground: "#ffd54f"
+  success: "#2e7d32"
+  warning: "#f9a825"
+
+componentStyles:
+  card:
+    background: "linear-gradient(180deg, rgba(21, 38, 21, 0.95), rgba(10, 31, 10, 0.98))"
+    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 104, 71, 0.15)"
+    borderRadius: "0.5rem"
+  header:
+    background: "linear-gradient(180deg, rgba(10, 31, 10, 0.98), rgba(8, 25, 8, 0.95))"
+    boxShadow: "0 2px 0 rgba(206, 17, 38, 0.2)"
+  badge:
+    background: "linear-gradient(135deg, #006847, #004d35)"
+    color: "#ffffff"
+
+customCSS: |
+  /* Marigold glow overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background: 
+      radial-gradient(ellipse at 20% 80%, rgba(0, 104, 71, 0.05) 0%, transparent 40%),
+      radial-gradient(ellipse at 80% 20%, rgba(206, 17, 38, 0.04) 0%, transparent 40%),
+      radial-gradient(ellipse at 50% 50%, rgba(255, 213, 79, 0.03) 0%, transparent 50%);
+  }
+  
+  /* Festive card hover */
+  [class*="card"]:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(206, 17, 38, 0.12);
+    transition: all 0.3s ease;
+  }
+  
+  /* Warm scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(10, 31, 10, 0.8);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #006847, #ce1126);
+    border-radius: 4px;
+  }

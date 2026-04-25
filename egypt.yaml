@@ -1,0 +1,91 @@
+name: egypt
+label: Egypt
+description: Pharaoh gold, Nile blue, and desert sand inspired by ancient Egypt
+
+palette:
+  background:
+    hex: "#1a1510"
+    alpha: 1.0
+  midground:
+    hex: "#c9a227"
+    alpha: 1.0
+  foreground:
+    hex: "#1e88e5"
+    alpha: 0.15
+  warmGlow: "rgba(201, 162, 39, 0.2)"
+  noiseOpacity: 0.35
+
+typography:
+  fontSans: '"Noto Sans Arabic", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans Arabic", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "16px"
+  lineHeight: "1.65"
+  letterSpacing: "0.01em"
+
+layout:
+  radius: "0.25rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#c9a227"
+  primaryForeground: "#1a1510"
+  accent: "#1e88e5"
+  ring: "#c9a227"
+  destructive: "#b71c1c"
+  border: "rgba(201, 162, 39, 0.2)"
+  muted: "#2a2318"
+  mutedForeground: "#a09060"
+  secondary: "#3d3428"
+  secondaryForeground: "#e0d0a0"
+  success: "#2e7d32"
+  warning: "#f57f17"
+
+componentStyles:
+  card:
+    background: "linear-gradient(180deg, rgba(42, 35, 24, 0.95), rgba(26, 21, 16, 0.98))"
+    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(201, 162, 39, 0.1)"
+    borderRadius: "0.25rem"
+  header:
+    background: "linear-gradient(180deg, rgba(26, 21, 16, 0.98), rgba(20, 16, 12, 0.95))"
+    boxShadow: "0 2px 0 rgba(201, 162, 39, 0.2)"
+  badge:
+    background: "linear-gradient(135deg, #c9a227, #a08020)"
+    color: "#1a1510"
+
+customCSS: |
+  /* Nile river shimmer effect */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background: 
+      radial-gradient(ellipse at 50% 100%, rgba(30, 136, 229, 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 30% 0%, rgba(201, 162, 39, 0.04) 0%, transparent 40%);
+  }
+  
+  /* Gold border glow on cards */
+  [class*="card"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.3), transparent);
+    pointer-events: none;
+  }
+  
+  /* Papyrus-like text feel */
+  h1, h2, h3 {
+    letter-spacing: 0.03em;
+    font-weight: 600;
+  }

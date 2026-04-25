@@ -1,0 +1,98 @@
+name: south-korea
+label: South Korea
+description: Taegeukgi inspired — white background with red, blue, and black trigram accents
+
+palette:
+  background:
+    hex: "#f5f5f5"
+    alpha: 1.0
+  midground:
+    hex: "#1a1a1a"
+    alpha: 1.0
+  foreground:
+    hex: "#c60c30"
+    alpha: 0.1
+  warmGlow: "rgba(198, 12, 48, 0.08)"
+  noiseOpacity: 0.15
+
+typography:
+  fontSans: '"Noto Sans KR", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans KR", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.65"
+  letterSpacing: "0.02em"
+
+layout:
+  radius: "0.75rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#0047a0"
+  primaryForeground: "#ffffff"
+  accent: "#c60c30"
+  ring: "#0047a0"
+  destructive: "#c60c30"
+  border: "rgba(0, 71, 160, 0.15)"
+  muted: "#e8e8e8"
+  mutedForeground: "#777777"
+  secondary: "#e0e0e0"
+  secondaryForeground: "#333333"
+  success: "#2e7d32"
+  warning: "#f9a825"
+
+componentStyles:
+  card:
+    background: "#ffffff"
+    boxShadow: "0 1px 4px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(0, 71, 160, 0.06)"
+    borderRadius: "0.75rem"
+  header:
+    background: "linear-gradient(180deg, #f5f5f5, #eeeeee)"
+    boxShadow: "0 1px 0 rgba(0, 71, 160, 0.1)"
+  badge:
+    background: "linear-gradient(135deg, #0047a0, #003380)"
+    color: "#ffffff"
+
+customCSS: |
+  /* Clean white aesthetic */
+  body {
+    background: linear-gradient(180deg, #f5f5f5 0%, #eeeeee 100%);
+  }
+  
+  /* Taegeuk symbol inspired accent */
+  [class*="card"]::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background: conic-gradient(#c60c30 0deg 180deg, #0047a0 180deg 360deg);
+    border-radius: 50%;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  
+  /* Subtle yin-yang hover effect */
+  [class*="card"]:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(0, 71, 160, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Clean modern scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e8e8e8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0047a0, #c60c30);
+    border-radius: 4px;
+  }

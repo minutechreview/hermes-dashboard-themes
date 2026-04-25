@@ -1,0 +1,81 @@
+name: uae
+label: UAE
+description: Elegant Emirati aesthetic — red, green, white, and black with gold accents
+
+palette:
+  background:
+    hex: "#0d0d0d"
+    alpha: 1.0
+  midground:
+    hex: "#e8e4dc"
+    alpha: 1.0
+  foreground:
+    hex: "#d4af37"
+    alpha: 0.2
+  warmGlow: "rgba(212, 175, 55, 0.15)"
+  noiseOpacity: 0.25
+
+typography:
+  fontSans: '"Noto Sans Arabic", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans Arabic", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+  letterSpacing: "0.01em"
+
+layout:
+  radius: "0.25rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#00732f"
+  primaryForeground: "#ffffff"
+  accent: "#d4af37"
+  ring: "#d4af37"
+  destructive: "#ce1126"
+  border: "rgba(0, 115, 47, 0.3)"
+  muted: "#1a1a1a"
+  mutedForeground: "#a0a0a0"
+  secondary: "#2a2a2a"
+  secondaryForeground: "#e8e4dc"
+  success: "#00732f"
+  warning: "#d4af37"
+
+componentStyles:
+  card:
+    background: "linear-gradient(180deg, rgba(26, 26, 26, 0.95), rgba(13, 13, 13, 0.98))"
+    boxShadow: "0 1px 0 rgba(212, 175, 55, 0.15) inset, 0 2px 8px rgba(0, 0, 0, 0.3)"
+    borderRadius: "0.25rem"
+  header:
+    background: "linear-gradient(180deg, rgba(13, 13, 13, 0.98), rgba(8, 8, 8, 0.95))"
+    boxShadow: "0 2px 0 rgba(206, 17, 38, 0.25)"
+  badge:
+    background: "linear-gradient(135deg, #00732f, #005c24)"
+    color: "#ffffff"
+
+customCSS: |
+  /* Gold geometric accent */
+  [class*="card"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #ce1126 33%, #00732f 33%, #00732f 66%, #d4af37 66%);
+    opacity: 0.5;
+    pointer-events: none;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  
+  /* Luxurious hover glow */
+  [class*="card"]:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(212, 175, 55, 0.2);
+    transition: all 0.4s ease;
+  }

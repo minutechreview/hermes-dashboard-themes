@@ -1,0 +1,77 @@
+name: sri-lanka
+label: Sri Lanka
+description: Lion flag inspired — maroon, saffron orange, forest green, and golden yellow
+
+palette:
+  background:
+    hex: "#2a0a0a"
+    alpha: 1.0
+  midground:
+    hex: "#ffb300"
+    alpha: 1.0
+  foreground:
+    hex: "#ff8c00"
+    alpha: 0.15
+  warmGlow: "rgba(255, 179, 0, 0.2)"
+  noiseOpacity: 0.35
+
+typography:
+  fontSans: '"Noto Sans Sinhala", "Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Noto Sans Sinhala", sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.65"
+  letterSpacing: "0.01em"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+colorOverrides:
+  primary: "#ffb300"
+  primaryForeground: "#2a0a0a"
+  accent: "#ff6f00"
+  ring: "#ffb300"
+  destructive: "#d32f2f"
+  border: "rgba(255, 179, 0, 0.2)"
+  muted: "#3d1515"
+  mutedForeground: "#b8860b"
+  secondary: "#4a2020"
+  secondaryForeground: "#ffd54f"
+  success: "#2e7d32"
+  warning: "#ff8f00"
+
+componentStyles:
+  card:
+    background: "linear-gradient(180deg, rgba(61, 21, 21, 0.95), rgba(42, 10, 10, 0.98))"
+    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 179, 0, 0.1)"
+    borderRadius: "0.5rem"
+  header:
+    background: "linear-gradient(180deg, rgba(42, 10, 10, 0.98), rgba(30, 8, 8, 0.95))"
+    boxShadow: "0 1px 0 rgba(255, 179, 0, 0.15)"
+
+customCSS: |
+  /* Lion's mane glow */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background: 
+      radial-gradient(ellipse at 50% 0%, rgba(255, 179, 0, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 30% 100%, rgba(46, 125, 50, 0.05) 0%, transparent 40%),
+      radial-gradient(ellipse at 70% 100%, rgba(255, 111, 0, 0.05) 0%, transparent 40%);
+  }
+  
+  /* Gold accent borders */
+  [class*="card"]:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(255, 179, 0, 0.2);
+    transition: all 0.3s ease;
+  }
